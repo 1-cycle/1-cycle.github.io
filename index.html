@@ -553,6 +553,9 @@
     .page-links a{ max-width:100%; padding:14px 20px; text-align:center; }
     .about-text .page-links{ justify-content:center; }
   }
+  .performance-video{margin-top:56px;scroll-margin-top:24px;}
+  .performance-video h3{font-family:'Noto Serif JP',serif;font-size:1.2rem;font-weight:500;color:var(--gold-soft);margin-bottom:20px;text-align:center;}
+  .performance-video video{display:block;width:min(100%,360px);aspect-ratio:9/16;margin:0 auto;background:#000;border:1px solid var(--line);}
 </style>
 </head>
 <body>
@@ -583,7 +586,7 @@
       <div class="about-text">
         <p>全国・国際大会で活躍したトップレベルの一輪車パフォーマーと、ダンサーによるチームです。高度な一輪車技術とダンスの芸術性を融合させ、<span class="accent-line">スポーツイベント、企業イベント、海外公演</span>など、幅広いシーンで観客を魅了してきました。</p>
         <p>一輪車のバランス感覚とダンサーの身体表現を活かし、<span class="accent-line">ブランドの世界観やイベントのコンセプトに合わせた演出</span>をご提案します。衣装・音楽・振付・メンバー編成からご相談ください。バレエからストリートダンスまで、演目に合わせて表現を組み合わせます。</p>
-        <nav class="page-links" aria-label="チームの詳細"><a href="1cycle-dance-members.html">メンバー紹介を見る</a><a href="https://www.youtube.com/@UnicycleDanceProject" target="_blank" rel="noopener noreferrer">パフォーマンス動画を見る</a></nav>
+        <nav class="page-links" aria-label="チームの詳細"><a href="1cycle-dance-members.html">メンバー紹介を見る</a><a href="#performance-video">パフォーマンス動画を見る</a></nav>
       </div>
       <div class="about-media">
         <div class="frame">
@@ -591,6 +594,13 @@
         </div>
         <div class="cap en">1cycle:Dance — Unicycle &amp; Dance</div>
       </div>
+    </div>
+    <div class="performance-video" id="performance-video">
+      <h3>パフォーマンス映像</h3>
+      <video controls playsinline preload="metadata" poster="assets/performance-poster.jpg" aria-label="1cycle:Dance パフォーマンス映像">
+        <source src="assets/performance-showreel.mp4" type="video/mp4">
+        お使いのブラウザは動画再生に対応していません。
+      </video>
     </div>
   </div>
 </section>
